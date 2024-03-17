@@ -106,12 +106,20 @@ body{
     color: red;
 }
 
+#update{
+    color: black;
+    position: absolute;
+    bottom: 2%;
+    text-align: center;
+    width: 100%;
+}
+
 
 /* Media Query for Mobile Devices */
 @media only screen and (max-width: 600px) {
     #game_container{
         max-width: 90vw;
-        width: 80vw;
+        width: 90vw;
         padding: 0.5rem;
     }
     
@@ -121,6 +129,7 @@ body{
     
     #text_type{
         font-size: 1.2rem;
+        padding: 0.2rem;
     }
     
     #typing_input{
