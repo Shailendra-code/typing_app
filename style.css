@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik+Lines&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: rgb(86, 86, 86);
+}
+
+#game_container{
+    max-width: 40vw;
+    width: 30vw;
+    background-color: #b7b7b7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    gap: 1rem;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 14px;
+    padding: 1rem;
+}
+#game_container  h1{
+    color: #2672ab;
+    text-decoration: underline;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 2rem;
+    font-family: "Rubik Lines", system-ui;
+}
+#text_type{
+    background-color: #f3b0e7;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 0;
+    border-radius: 8px;
+}
+
+#typing_input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid blue;
+    border-top: 2px solid green;
+    padding: 1rem 0.5rem;
+    font-weight: 400;
+    font-size: 1.2rem;
+    background-color: #bdbaba;
+}
+
+#feedback{
+    background-color: rgb(86, 115, 86);
+    width: 100%;
+    padding: 1rem 0.5rem;
+    font-weight: 500;
+    font-size: 1.5rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 9px;
+}
+
+#feedback p{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    color: #67bab2;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    text-decoration: dotted;
+}
+
+#speed{
+    color: rgb(191, 231, 12);
+    text-decoration: underline;
+}
+
+#accuracy{
+    color: rgb(250, 66, 78);
+    text-decoration: underline;
+}
+
+#message_area{
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: red;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.correct {
+    color: green;
+}
+
+.inCorrect {
+    color: red;
+}
+
+
+/* Media Query for Mobile Devices */
+@media only screen and (max-width: 600px) {
+    #game_container{
+        max-width: 90vw;
+        width: 80vw;
+        padding: 0.5rem;
+    }
+    
+    #game_container h1{
+        font-size: 1.5rem;
+    }
+    
+    #text_type{
+        font-size: 1.2rem;
+    }
+    
+    #typing_input{
+        font-size: 1rem;
+    }
+    
+    #feedback{
+        font-size: 1.2rem;
+    }
+    
+    #feedback p{
+        font-size: 1.2rem;
+    }
+    
+    #message_area{
+        font-size: 1rem;
+    }
+}
